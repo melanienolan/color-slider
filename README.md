@@ -1,0 +1,1 @@
+A colour slider using JavaScript
