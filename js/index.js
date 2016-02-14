@@ -27,17 +27,18 @@ function start(){
 	    	self.style.left = x + "px";
 	    	self.nextElementSibling.textContent = Math.round(x / 2);
 	    	var bodyColorSplit = body.style.background.split(",");
-	    }
-	    if (self.nextElementSibling.classList[1] === "red"){
-	    	bodyColorSplit[0] = "rgb("+self.nextElementSibling.textContent;
+	    
+		    if (self.nextElementSibling.classList[1] === "red"){
+		    	bodyColorSplit[0] = "rgb("+self.nextElementSibling.textContent;
+			}
+			else if (self.nextElementSibling.classList[1] === "green"){
+		    	bodyColorSplit[1] = self.nextElementSibling.textContent;
+			}
+			else if (self.nextElementSibling.classList[1] === "blue"){
+		    	bodyColorSplit[2] = self.nextElementSibling.textContent;
+			}
+			body.style.background = bodyColorSplit.join();
 		}
-		else if (self.nextElementSibling.classList[1] === "green"){
-	    	bodyColorSplit[1] = self.nextElementSibling.textContent;
-		}
-		else if (self.nextElementSibling.classList[1] === "blue"){
-	    	bodyColorSplit[2] = self.nextElementSibling.textContent;
-		}
-		body.style.background = bodyColorSplit.join();
 	}
 
 	function stop(){
