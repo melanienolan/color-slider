@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(0,0,0);
+}
+.container {
+  width: 540px;
+  margin: 0 auto;
+  position: relative;
+}
+.container .bar {
+  height: 20px;
+  width: 100%;
+  margin-top: 50px;
+}
+.container .bar.b1 {
+  background: -webkit-linear-gradient(top right, red, white);
+  background: linear-gradient(to bottom left, red, white);
+}
+.container .bar.b2 {
+  background: -webkit-linear-gradient(top right, green, lightgreen);
+  background: linear-gradient(to bottom left, green, lightgreen);
+}
+.container .bar.b3 {
+  background: -webkit-linear-gradient(top right, blue, lightblue);
+  background: linear-gradient(to bottom left, blue, lightblue);
+}
+.container .slider {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0.5px solid black;
+}
+.container .output {
+  width: 100px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: bold 30px Arial;
+  margin: 30px auto;
+}
