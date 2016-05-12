@@ -12,16 +12,16 @@ body {
   margin-top: 50px;
 }
 .container .bar.b1 {
-  background: -webkit-linear-gradient(top right, red, white);
-  background: linear-gradient(to bottom left, red, white);
+  background: -webkit-linear-gradient(left, rgb(255,255,255), rgb(255,0,0));
+  background: linear-gradient(left, rgb(255,255,255), rgb(255,0,0));
 }
 .container .bar.b2 {
-  background: -webkit-linear-gradient(top right, green, lightgreen);
-  background: linear-gradient(to bottom left, green, lightgreen);
+  background: -webkit-linear-gradient(left, rgb(255,255,255), rgb(0,255,0));
+  background: linear-gradient(left, rgb(255,255,255), rgb(0,255,0));
 }
 .container .bar.b3 {
-  background: -webkit-linear-gradient(top right, blue, lightblue);
-  background: linear-gradient(to bottom left, blue, lightblue);
+  background: -webkit-linear-gradient(left, rgb(255,255,255), rgb(0,0,255));
+  background: linear-gradient(left, rgb(255,255,255), rgb(0,0,255));
 }
 .container .slider {
   width: 30px;
