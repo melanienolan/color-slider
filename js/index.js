@@ -4,6 +4,12 @@ var startingPoint = sliders[0].getBoundingClientRect().left;
 var finishingPoint = document.querySelector(".bar").offsetWidth;
 var output = document.querySelector(".output");
 var isDown = false;
+
+var EVENTS = {
+    "END"   : "ontouchstart" in document.documentElement ? "touchend" : "mouseup",
+    "MOVE"  : "ontouchstart" in document.documentElement ? "touchmove" : "mousemove"
+};
+
 body.style.background = "rgb(0,0,0)";
 
 function start(){
@@ -11,8 +17,8 @@ function start(){
     isDown = true;
     var self = this;
 
-  	self.parentNode.addEventListener("mousemove", move, true);
-  	self.parentNode.addEventListener("mouseup", stop, true);
+  	self.parentNode.addEventListener(EVENTS.MOVE, move, true);
+  	self.parentNode.addEventListener(EVENTS.END, stop, true);
 
 	function move(e){
 	    var x = e.pageX - startingPoint;
